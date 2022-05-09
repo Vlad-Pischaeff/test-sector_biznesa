@@ -20,8 +20,6 @@ function SearchInput() {
   const handlerOnChange = e => {
     setInput(e.target.value);
   }
-  
-  console.log('SearchInput render...', input);
 
   return (
     <input className="search" placeholder="Поиск" type="text" onChange={handlerOnChange} />

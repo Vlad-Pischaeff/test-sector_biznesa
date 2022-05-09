@@ -12,15 +12,9 @@ function PageForward() {
       : dispatch(setCurrentPage({ currentPage: pages.currentPage + 1 }));
   }
 
-  const getLink = () => {
-    return pages.currentPage === pages.pages
-      ? 1
-      : pages.currentPage + 1;
-  }
-
   return (
     <div onClick={goForward}>
-      <Link className="App-footer_dir passive" to={`/posts/${getLink()}`}>Далее</Link>
+      <Link className="App-footer_dir passive" to={`/posts/${pages.forwardPage}`}>Далее</Link>
     </div>
   );
 };

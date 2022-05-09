@@ -12,15 +12,9 @@ function PageBackward() {
       : dispatch(setCurrentPage({ currentPage: pages.currentPage - 1 }));
   }
 
-  const getLink = () => {
-    return pages.currentPage === 1
-      ? pages.pages
-      : pages.currentPage - 1;
-  }
-
   return (
     <div onClick={goBackward}>
-      <Link className="App-footer_dir passive" to={`/posts/${getLink()}`}>Назад</Link>
+      <Link className="App-footer_dir passive" to={`/posts/${pages.backwardPage}`}>Назад</Link>
     </div>
   );
 };

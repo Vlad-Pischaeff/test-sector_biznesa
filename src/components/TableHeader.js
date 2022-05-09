@@ -13,8 +13,6 @@ function TableHeader() {
     return ui[id] ? "arrow asc" : "arrow desc";
   }
 
-  console.log('TableHeader render...', ui);
-
   return (
     <thead>
       <tr>

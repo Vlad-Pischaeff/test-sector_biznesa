@@ -17,8 +17,6 @@ function TableBody() {
     if (posts.state === 'failed') return <tr><td colSpan="3">loading posts fail...</td></tr>;
   }
 
-  console.log('TableBody render...', posts);
-
   return (
     <tbody>
       { showPosts() }

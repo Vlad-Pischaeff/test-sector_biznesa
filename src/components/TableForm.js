@@ -3,8 +3,6 @@ import TableBody from './TableBody';
 
 function FormTable() {
   
-  console.log('FormTable render...');
-
   return (
     <table className="table">
       <TableHeader />

@@ -13,8 +13,6 @@ function App() {
     dispatch(getPosts());
   }, [dispatch]);
 
-  console.log('App render...');
-
   return (
     <div className="App">
       <header className="App-header">
