@@ -2,9 +2,7 @@ import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { getPosts } from './store/entities/Posts';
-import SearchInput from './components/Search/SearchInput';
-import FormTable from './components/Table/TableForm';
-import Paginator from './components/Paginator/Paginator';
+import { Paginator, SearchInput, FormTable } from './components';
 
 function App() {
   const dispatch = useDispatch();
