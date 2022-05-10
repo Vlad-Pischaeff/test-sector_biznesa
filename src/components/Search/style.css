@@ -1,0 +1,19 @@
+.search {
+  height: 3rem;
+  width: 60%;
+  color: white;
+  background: url('../../stuff/icons/icons8-search-30.png') no-repeat right #5A5C66;
+  background-size: 1.5rem;
+  background-position: center right 1rem;
+  border: none;
+  margin: .3rem 0;
+  padding: 0 1rem;
+}
+.search::placeholder {
+  font-weight: 400;
+  color: #eee;
+}
+.search:focus {
+  outline: none;
+  background-color: #474955;
+}

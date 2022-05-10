@@ -1,6 +1,7 @@
 import PageEnumerator from './PageEnumerator';
 import PageBackward from './PageBackward';
 import PageForward from './PageForward';
+import './style.css';
 
 function Paginator() {
 

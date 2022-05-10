@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { switchSorting } from '../store/entities/Ui';
+import { switchSorting } from '../../store/entities/Ui';
 
 function TableHeader() {
   const dispatch = useDispatch();

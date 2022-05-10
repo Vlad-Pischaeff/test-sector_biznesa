@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { checkPosts } from '../store/entities/Posts';
+import { checkPosts } from '../../store/entities/Posts';
+import './style.css';
 
 function SearchInput() {
   const dispatch = useDispatch();

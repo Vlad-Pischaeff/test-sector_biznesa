@@ -1,0 +1,28 @@
+.App-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #474955;
+  font-size: 1.5rem;
+  padding: 0 2rem;
+}
+.App-footer_dir {
+  font-weight: 400;
+}
+.App-footer_num {
+  font-size: 1rem;
+  font-weight: 700;
+  font-style: italic;
+}
+.page {
+  margin: 0 .2rem;
+}
+a {
+  text-decoration: none;
+}
+.active {
+  color: green;
+}
+.passive {
+  color: #474955;
+}

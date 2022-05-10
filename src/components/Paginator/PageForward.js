@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { setCurrentPage } from '../store/entities/Pages';
+import { setCurrentPage } from '../../store/entities/Pages';
 
 function PageForward() {
   const dispatch = useDispatch();

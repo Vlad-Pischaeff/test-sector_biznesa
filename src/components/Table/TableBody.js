@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import { ENTRIES_PER_PAGE } from '../store/middleware';
+import { ENTRIES_PER_PAGE } from '../../store/middleware';
 
 function TableBody() {
   const { posts, pages } = useSelector(state => state.entities);
