@@ -9,9 +9,9 @@ function TableBody() {
     if (posts.state === 'fullfiled') {
       let arr = posts.filteredList.slice(ENTRIES_PER_PAGE * (pages.currentPage - 1), ENTRIES_PER_PAGE * pages.currentPage);
       return arr.map((n, i) =>  <tr key={i}>
-                                  <td className="column1">{n.id}</td>
-                                  <td>{n.title}</td>
-                                  <td>{n.body}</td>
+                                  <td className="tc-1">{n.id}</td>
+                                  <td className="tc-2">{n.title}</td>
+                                  <td className="tc-3">{n.body}</td>
                                 </tr>);
     }
     if (posts.state === 'failed') return <tr><td colSpan="3">loading posts fail...</td></tr>;

@@ -13,7 +13,7 @@ function SearchInput() {
   // ...check posts on input change
   useEffect(() => {
     dispatch(checkPosts({ testStr: input }));
-  }, [input, dispatch]);
+  }, [input, dispatch])
 
   // ...set Number of pages after loading all posts on start
   useEffect(() => {
