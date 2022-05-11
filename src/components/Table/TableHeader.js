@@ -36,7 +36,7 @@ function TableHeader() {
           <div className="th-wrap">
             <span>Описание</span>
             <div className="arrow-wrap">
-              <div className={setArrow('description')} id="description" onClick={handlerOnClick}></div>
+              <div className={setArrow('body')} id="body" onClick={handlerOnClick}></div>
             </div>
           </div>
         </th>

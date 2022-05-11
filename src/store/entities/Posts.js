@@ -22,9 +22,16 @@ const posts = createSlice({
     sortPosts: (posts, { payload }) => {
       let i = Object.keys(payload);
       let val = payload[i];
-      posts.filteredList = val
-        ? posts.filteredList.sort((a, b) => a[i] - b[i])
-        : posts.filteredList.sort((a, b) => b[i] - a[i]);
+
+      if (i[0] === "id") {
+        posts.filteredList = val
+          ? posts.filteredList.sort((a, b) => a[i] - b[i])
+          : posts.filteredList.sort((a, b) => b[i] - a[i]);
+      } else {
+        posts.filteredList = val
+          ? posts.filteredList.sort((a, b) => a[i][0].localeCompare(b[i][0]))
+          : posts.filteredList.sort((a, b) => b[i][0].localeCompare(a[i][0]));
+      }
     }
   },
   extraReducers: {
