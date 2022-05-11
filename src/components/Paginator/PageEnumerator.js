@@ -11,17 +11,17 @@ function PageEnumerator() {
   }
 
   const getLinkState = index => {
-    return pages.currentPage - 1 === index
+    return pages.currentPage === index
       ? "page active"
       : "page passive";
   }
 
   const handlePages = () => {
-    let arr = new Array(pages.pages).fill(1);
+    let arr = [...Array(pages.pages).keys()].map(n => ++n);
 
-    return arr.map((n, i) => 
-      <span key={i} onClick={() => handleCurrentPage(i + 1)}>
-        <Link className={getLinkState(i)} to={`/posts/${i + 1}`}>{i + 1}</Link>
+    return arr.map(n => 
+      <span key={n} onClick={() => handleCurrentPage(n)}>
+        <Link className={getLinkState(n)} to={`/posts/${n}`}>{n}</Link>
       </span>
     );
   }
